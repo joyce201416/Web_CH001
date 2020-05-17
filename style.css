@@ -1,3 +1,48 @@
-*{
-    color: red;
+@font-face {
+    /* 字形名稱 */
+    font-family: Ngaan;
+    /* 字形來源 src url 路徑 */
+    src: url(./font/I.Ngaan.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 30px;
+}
+
+#logo span{
+    font-family: Ngaan;
+    font-size: 36px;
+    font-weight: 900;
+
+}
+
+#nav{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3,1fr);
+    /* 對齊項目-垂直 */
+    align-items: center;
+    text-align: center;
+}
+
+#nav a{
+    /* 文字裝飾 */
+    text-decoration: none;
+    color:#252525;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+#nav a:hover{
+    color: brown;
+    font-size: 22px;
 }
